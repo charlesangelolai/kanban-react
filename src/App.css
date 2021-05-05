@@ -1,54 +1,44 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #f3f3f3;
+.App {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
+.App .column {
+  width: 30%;
+  margin: 5px;
 }
 
-.section {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 0.5rem;
+.input-field {
+  margin: 5px;
 }
 
 .btn {
-  margin-left: 1rem;
-  padding: 0.25rem;
+  margin-left: 5px;
 }
 
-.flexbox {
-  display: flex;
-  justify-content: space-between;
+.droppable-col {
   width: 100%;
-  max-width: 1000px;
-  height: 100vh;
-  overflow: hidden;
-
-  margin: 0 auto;
-  padding: 15px;
-}
-
-.flexbox .board {
+  background-color: gray;
+  padding: 10px 10px 0 10px;
+  border-radius: 7px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 275px;
-  background-color: #0079bf;
-  padding: 15px;
 }
 
-.flexbox .board .card {
-  padding: 15px 25px;
-  background-color: #f3f3f3;
-  cursor: pointer;
-  margin-bottom: 15px;
+.item {
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.item.dragging {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
